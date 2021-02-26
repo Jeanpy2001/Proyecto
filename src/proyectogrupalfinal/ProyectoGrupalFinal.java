@@ -16,6 +16,8 @@ public class ProyectoGrupalFinal {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        System.out.println("Saludos, cada uno por favor escriba su nombre para saber que tienen accesos");
     }
     
 }
