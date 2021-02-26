@@ -19,6 +19,7 @@ public class ClasePersona {
         this.nombre = nombre;
         this.apellido = apellido;
         this.NumeroIdentidad = NumeroIdentidad;
+      
     }
     
     
