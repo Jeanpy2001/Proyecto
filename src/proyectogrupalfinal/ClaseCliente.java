@@ -12,6 +12,8 @@ package proyectogrupalfinal;
 public class ClaseCliente {
 
     private int edad;
+    private double precioFinal;
+    
     
     
     /**
