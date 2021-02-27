@@ -21,7 +21,11 @@ public class ProyectoGrupalFinal {
         System.out.println("Saludos, cada uno por favor escriba su nombre para saber que no tienen complicaciones con el accesos");
         System.out.println("Funciono");
         System.out.println("qwerty");
-        System.out.println("Intenten ustedes");    }
+        System.out.println("Intenten ustedes");    
+        System.out.println("Todo correcto aqui");  
+    
+    
+    }
     
     
 }
