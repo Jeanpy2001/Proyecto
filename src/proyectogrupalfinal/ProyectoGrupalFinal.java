@@ -19,7 +19,8 @@ public class ProyectoGrupalFinal {
         
         
         System.out.println("Saludos, cada uno por favor escriba su nombre para saber que no tienen complicaciones con el accesos");
-        System.out.println("Tambien agregen un comentario de las modificacion que hicieron");
+        System.out.println("Funciono");
     }
+    
     
 }
