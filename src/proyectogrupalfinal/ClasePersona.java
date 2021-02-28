@@ -9,7 +9,7 @@ package proyectogrupalfinal;
  *
  * @author User
  */
-public  class  ClasePersona {
+public  class  ClasePersona  {
     
    private String nombre;
    private String apellido;
@@ -24,6 +24,11 @@ public  class  ClasePersona {
     }
 
     //public abstract void CalcularFactura();
+
+    @Override
+    public String toString() {
+        return "ClasePersona{" + "nombre=" + nombre + ", apellido=" + apellido + ", NumeroIdentidad=" + NumeroIdentidad + ", factura=" + factura + '}';
+    }
     
  
     
