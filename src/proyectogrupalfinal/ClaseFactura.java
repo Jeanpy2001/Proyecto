@@ -11,4 +11,6 @@ package proyectogrupalfinal;
  */
 public class ClaseFactura {
     private double pago;
+    //actualizado
 }
+
