@@ -11,6 +11,25 @@ package proyectogrupalfinal;
  */
 public class Factura {
     private double pago;
+    private double pagoFinalConIva;
+    //private Persona datosCliente;
     //actualizado
+
+    public double getPago() {
+        return pago;
+    }
+
+    public void setPago(double pago) {
+        this.pago = pago;
+    }
+
+    public double getPagoFinalConIva() {
+        return pagoFinalConIva;
+    }
+
+    public void setPagoFinalConIva(double pagoFinalConIva) {
+        this.pagoFinalConIva = pagoFinalConIva;
+    }
+    
 }
 
