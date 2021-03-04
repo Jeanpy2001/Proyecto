@@ -12,16 +12,18 @@ package proyectogrupalfinal;
 public class Factura {
     private double pago;
     private double pagoFinalConIva;
-    private Persona datosCliente;
+    private ClaseCliente datosCliente;
     //actualizado
 
-    public Persona getDatosCliente() {
+    public ClaseCliente getDatosCliente() {
         return datosCliente;
     }
 
-    public void setDatosCliente(Persona datosCliente) {
+    public void setDatosCliente(ClaseCliente datosCliente) {
         this.datosCliente = datosCliente;
     }
+
+    
     
     public double getPago() {
         return pago;
@@ -43,6 +45,8 @@ public class Factura {
     public String toString() {
         return "Factura{" + "pago=" + pago + ", pagoFinalConIva=" + pagoFinalConIva + ", datosCliente=" + datosCliente + '}';
     }
+
+    
     
 }
 
