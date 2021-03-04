@@ -15,7 +15,7 @@ public  class ClaseCliente extends ClasePersona{
     private double precioFinal;
 
     public ClaseCliente(int edad, double precioFinal, String nombre, String apellido, int NumeroIdentidad, double factura) {
-        super(nombre, apellido, NumeroIdentidad, factura);
+        super(nombre, apellido, NumeroIdentidad);
         this.edad = edad;
         this.precioFinal = precioFinal;
     }
