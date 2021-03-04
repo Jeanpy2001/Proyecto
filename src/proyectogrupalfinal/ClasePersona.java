@@ -27,7 +27,7 @@ public  class  ClasePersona  {
 
     @Override
     public String toString() {
-        return "ClasePersona{" + "nombre=" + nombre + ", apellido=" + apellido + ", NumeroIdentidad=" + NumeroIdentidad + ", factura=" + factura + '}';
+        return "ClasePersona{" + "nombre=" + nombre + ", apellido=" + apellido + ", NumeroIdentidad=" + NumeroIdentidad + '}';
     }
     
  
