@@ -12,8 +12,8 @@ package proyectogrupalfinal;
 public class ClaseEmpleado extends ClasePersona {
     private String codigo;
 
-    public ClaseEmpleado(String codigo, String nombre, String apellido, int NumeroIdentidad, double factura) {
-        super(nombre, apellido, NumeroIdentidad, factura);
+    public ClaseEmpleado(String codigo, String nombre, String apellido, int NumeroIdentidad ) {
+        super(nombre, apellido, NumeroIdentidad);
         this.codigo = codigo;
     }
 
