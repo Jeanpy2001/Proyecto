@@ -653,7 +653,6 @@ lblHyudai.setIcon(imageHYDAI);
         try{
             
             if(rbtBMW.isSelected()){
-                txaInformacion.setText("");
                aux = (String) cbmBMW.getSelectedItem();
                 if(aux.equals("BMW Serie 7")){
                     txaInformacion.setText(auto[2].toString());
@@ -664,7 +663,6 @@ lblHyudai.setIcon(imageHYDAI);
                 }              
             }
             if(rbtHyundai.isSelected()){
-                txaInformacion.setText("");
                 aux = (String) cmbHyundai.getSelectedItem();
                 if(aux.equals("Accent")){
                    txaInformacion.setText(auto[4].toString()); 
@@ -674,7 +672,6 @@ lblHyudai.setIcon(imageHYDAI);
                 }
             }
             if(rbtMercedes.isSelected()){
-                txaInformacion.setText("");
                 aux = (String) cbmMercedes.getSelectedItem();
                 if(aux.equals("Mercedes Benzs Clase B B 180D")){
                     txaInformacion.setText(auto[0].toString());
@@ -741,6 +738,7 @@ lblHyudai.setIcon(imageHYDAI);
 
     private void rbtMercedesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rbtMercedesMouseClicked
         // TODO add your handling code here:
+        txaInformacion.setText("");
         cbmMercedes.setEnabled(true);
         cmbHyundai.setEnabled(false);
         cbmBMW.setEnabled(false);
@@ -748,6 +746,7 @@ lblHyudai.setIcon(imageHYDAI);
 
     private void rbtBMWMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rbtBMWMouseClicked
         // TODO add your handling code here:
+        txaInformacion.setText("");
         cbmMercedes.setEnabled(false);
         cmbHyundai.setEnabled(false);
         cbmBMW.setEnabled(true);
@@ -755,6 +754,7 @@ lblHyudai.setIcon(imageHYDAI);
 
     private void rbtHyundaiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rbtHyundaiMouseClicked
         // TODO add your handling code here:
+        txaInformacion.setText("");
         cbmMercedes.setEnabled(false);
         cmbHyundai.setEnabled(true);
         cbmBMW.setEnabled(false);
