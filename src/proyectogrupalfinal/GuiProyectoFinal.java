@@ -656,28 +656,30 @@ lblHyudai.setIcon(imageHYDAI);
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
         // TODO add your handling code here:
         
-    String nombre;
-    String apellido;
+    
     String nombre1;
     String apellido1;
-    String codigo;
-    String cedula;
+    int cedula;
     int edad;
     String fecha;
-    //ClaseEmpleado empleado = new ClaseEmpleado("00000","Jorge","Proaño",1700235645);
+    ClaseEmpleado empleado = new ClaseEmpleado("00000","Jorge","Proaño",1700235645);
+    
     
     try{
         
-    nombre = txtNombre.getText();
+    
     nombre1= txtNombre1.getText();
-    apellido= txtApellido.getText();
     apellido1= txtApellido1.getText();
-    cedula = txtCedula.getText();
-    codigo = txtCodigo.getText();
+    cedula = Integer.parseInt(txtCedula.getText());
     edad = Integer.parseInt(txtEdad.getText());
     
-    //if(txtNombre.getText().equals()){
-    //}    
+    if(txtNombre.getText().equals(empleado.getNombre())){
+        if(txtApellido.getText().equals(empleado.getApellido())){
+            if(txtCodigo.getText().equals(empleado.getCodigo())){
+                ClaseCliente cliente = new ClaseCliente(edad, nombre1, apellido1,cedula);
+            }
+        }
+    }    
    
     
     }
