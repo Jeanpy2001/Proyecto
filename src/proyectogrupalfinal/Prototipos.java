@@ -46,6 +46,15 @@ public class Prototipos {
     if(rbtHyundai.isSelected()){
             marca = "Hyundai";
       }
+    ClaseEmpleado empleado = new ClaseEmpleado("00000","Jorge","Proaño",1700235645);
+    if(txtNombre.getText().equals(empleado.getNombre()){
+        if(txtNombre.getText().equals(empleado.getApellido()){
+            if(txtCodigo.getText().equals(empleado.getCodigo()){
+    
+            }
+        }
+    }
+   
     
     ///////////////////////////////////////////////////////
     if (VerificacionFecha(Integer.parseInt(txtDia.getText()), Integer.parseInt(txtMes.getText()), Integer.parseInt(txtAño.getText()))) {    
