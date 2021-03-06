@@ -13,11 +13,12 @@ public class Automovil {
     
     private String modelo;
     private String tipo;
+    private String marca;
     private int cantidad;
 
     @Override
     public String toString() {
-        return "ClaseAutomovil{" + "modelo=" + modelo + ", tipo=" + tipo + ", cantidad=" + cantidad + '}';
+        return "Dastos del Automovil[" + "modelo: " + modelo + ", tipo: " + tipo + ", cantidad: " + cantidad + ", marca"+ marca +']';
     }
 
     public String getModelo() {
@@ -36,6 +37,14 @@ public class Automovil {
         this.tipo = tipo;
     }
 
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
     public int getCantidad() {
         return cantidad;
     }
@@ -43,5 +52,7 @@ public class Automovil {
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
+
+    
       
 }
