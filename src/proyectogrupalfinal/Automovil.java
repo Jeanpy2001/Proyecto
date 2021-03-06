@@ -14,15 +14,15 @@ public class Automovil {
     private String modelo;
     private String tipo;
     private String marca;
-    private int presio;
+    private double precio;
     private int anio;
     private int kilometraje;
 
-    public Automovil(String modelo, String tipo, String marca, int presio, int anio, int kilometraje) {
+    public Automovil(String modelo, String tipo, String marca, double precio, int anio, int kilometraje) {
         this.modelo = modelo;
         this.tipo = tipo;
         this.marca = marca;
-        this.presio = presio;
+        this.precio = precio;
         this.anio = anio;
         this.kilometraje = kilometraje;
     }
@@ -51,12 +51,17 @@ public class Automovil {
         this.marca = marca;
     }
 
-    public int getPresio() {
-        return presio;
+    public double getPrecio() {
+        return precio;
     }
 
+    public int getAnio() {
+        return anio;
+    }
+
+
     public void setPresio(int presio) {
-        this.presio = presio;
+        this.precio = presio;
     }
 
     public int getAño() {
@@ -77,7 +82,7 @@ public class Automovil {
 
     @Override
     public String toString() {
-        return "Información{" + "modelo: " + modelo + ", tipo: " + tipo + ", marca: " + marca + ", presio: " + presio + ", año:" + anio + ", kilometraje: " + kilometraje + '}';
+        return "Información{" + "modelo: " + modelo + ", tipo: " + tipo + ", marca: " + marca + ", presio: " + precio + ", año:" + anio + ", kilometraje: " + kilometraje + '}';
     }
     
     
