@@ -23,6 +23,30 @@ public  class  ClasePersona  {
         
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public int getNumeroIdentidad() {
+        return NumeroIdentidad;
+    }
+
+    public void setNumeroIdentidad(int NumeroIdentidad) {
+        this.NumeroIdentidad = NumeroIdentidad;
+    }
+    
     //public abstract void CalcularFactura();
 
     @Override
