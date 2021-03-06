@@ -5,6 +5,7 @@
  */
 package proyectogrupalfinal;
 
+import com.sun.media.sound.AuFileReader;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -28,6 +29,7 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
        Fecha c1;
        
        
+       
     /**
      * Creates new form GuiProyectoFinal
      */
@@ -38,7 +40,17 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
         e1 = new Factura();
          
     }
-    /*
+    Automovil auto[] = new Automovil[6];
+    
+    public void crearAutomivil(){
+        auto[0] = new Automovil("Mercedes Benzs Clase B B 180D","SUV crossover","Mercedes Benz",28.462,2013,190);
+        auto[1] = new Automovil("Mercedes Benzs GLA","SUV compacto","Mercedes Benz",40.800,2014,210);
+        auto[2] = new Automovil("BMW Serie 7","Sedán","BMW",101.400,2019,250);
+        auto[3] = new Automovil("BMW GRT M3","Coupé","BMW",55.000,2006,260);
+        auto[4] = new Automovil("Accent","Sedán","Hyundai",45.900,2018,190);
+        auto[5] = new Automovil("Verna","Subcompacto","Hyundai",18.250,2020,170);
+    }
+       
     public static boolean VerificacionFecha(int dia, int mes, int año) {
         
         boolean comprobacion = false;
@@ -677,6 +689,7 @@ lblHyudai.setIcon(imageHYDAI);
         if(txtApellido.getText().equals(empleado.getApellido())){
             if(txtCodigo.getText().equals(empleado.getCodigo())){
                 ClaseCliente cliente = new ClaseCliente(edad, nombre1, apellido1,cedula);
+                crearAutomivil();
             }
         }
     }    
