@@ -173,6 +173,11 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
 
         btgMarca.add(rbtMercedes);
         rbtMercedes.setText("Mercedes Benzs");
+        rbtMercedes.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                rbtMercedesMouseClicked(evt);
+            }
+        });
         rbtMercedes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rbtMercedesActionPerformed(evt);
@@ -181,6 +186,11 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
 
         btgMarca.add(rbtBMW);
         rbtBMW.setText("BMW");
+        rbtBMW.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                rbtBMWMouseClicked(evt);
+            }
+        });
         rbtBMW.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rbtBMWActionPerformed(evt);
@@ -189,6 +199,11 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
 
         btgMarca.add(rbtHyundai);
         rbtHyundai.setText("Hyundai");
+        rbtHyundai.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                rbtHyundaiMouseClicked(evt);
+            }
+        });
         rbtHyundai.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rbtHyundaiActionPerformed(evt);
@@ -631,6 +646,48 @@ lblHyudai.setIcon(imageHYDAI);
 
     private void btnInformacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInformacionActionPerformed
         // TODO add your handling code here:
+        
+        String aux,aux1,aux2;
+        crearAutomivil();
+
+        try{
+            
+            if(rbtBMW.isSelected()){
+                txaInformacion.setText("");
+               aux = (String) cbmBMW.getSelectedItem();
+                if(aux.equals("BMW Serie 7")){
+                    txaInformacion.setText(auto[2].toString());
+                }
+                if(aux.equals("BMW GRT M3")){
+                    txaInformacion.setText("");
+                    txaInformacion.setText(auto[3].toString());
+                }              
+            }
+            if(rbtHyundai.isSelected()){
+                txaInformacion.setText("");
+                aux = (String) cmbHyundai.getSelectedItem();
+                if(aux.equals("Accent")){
+                   txaInformacion.setText(auto[4].toString()); 
+                }
+                if(aux.equals("Verna")){
+                    txaInformacion.setText(auto[5].toString());
+                }
+            }
+            if(rbtMercedes.isSelected()){
+                txaInformacion.setText("");
+                aux = (String) cbmMercedes.getSelectedItem();
+                if(aux.equals("Mercedes Benzs Clase B B 180D")){
+                    txaInformacion.setText(auto[0].toString());
+                }
+                if(aux.equals("Mercedes Benzs GLA")){
+                    txaInformacion.setText(auto[1].toString());
+                }
+            }
+                
+        }
+        catch(Exception e){
+           JOptionPane.showConfirmDialog(rootPane, "ERROR");
+        }
       
     }//GEN-LAST:event_btnInformacionActionPerformed
 
@@ -676,8 +733,32 @@ lblHyudai.setIcon(imageHYDAI);
         
             JOptionPane.showMessageDialog(rootPane, "Por favor debe llenar todos las casillas");  
         }
+    catch(Exception e){
+           JOptionPane.showConfirmDialog(rootPane, "ERROR");
+        }
         
     }//GEN-LAST:event_btnGuardarActionPerformed
+
+    private void rbtMercedesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rbtMercedesMouseClicked
+        // TODO add your handling code here:
+        cbmMercedes.setEnabled(true);
+        cmbHyundai.setEnabled(false);
+        cbmBMW.setEnabled(false);
+    }//GEN-LAST:event_rbtMercedesMouseClicked
+
+    private void rbtBMWMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rbtBMWMouseClicked
+        // TODO add your handling code here:
+        cbmMercedes.setEnabled(false);
+        cmbHyundai.setEnabled(false);
+        cbmBMW.setEnabled(true);
+    }//GEN-LAST:event_rbtBMWMouseClicked
+
+    private void rbtHyundaiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rbtHyundaiMouseClicked
+        // TODO add your handling code here:
+        cbmMercedes.setEnabled(false);
+        cmbHyundai.setEnabled(true);
+        cbmBMW.setEnabled(false);
+    }//GEN-LAST:event_rbtHyundaiMouseClicked
 
     /**
      * @param args the command line arguments

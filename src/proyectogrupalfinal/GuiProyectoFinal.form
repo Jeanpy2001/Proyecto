@@ -298,6 +298,7 @@
             <Property name="text" type="java.lang.String" value="Mercedes Benzs"/>
           </Properties>
           <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="rbtMercedesMouseClicked"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtMercedesActionPerformed"/>
           </Events>
         </Component>
@@ -309,6 +310,7 @@
             <Property name="text" type="java.lang.String" value="BMW"/>
           </Properties>
           <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="rbtBMWMouseClicked"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtBMWActionPerformed"/>
           </Events>
         </Component>
@@ -320,6 +322,7 @@
             <Property name="text" type="java.lang.String" value="Hyundai"/>
           </Properties>
           <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="rbtHyundaiMouseClicked"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtHyundaiActionPerformed"/>
           </Events>
         </Component>
