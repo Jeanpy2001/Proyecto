@@ -79,9 +79,6 @@ public class Automovil {
     public String toString() {
         return "Información{" + "modelo: " + modelo + ", tipo: " + tipo + ", marca: " + marca + ", presio: " + presio + ", año:" + anio + ", kilometraje: " + kilometraje + '}';
     }
-
-    
-
     
     
       
