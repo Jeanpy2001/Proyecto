@@ -13,13 +13,13 @@ public  class  ClasePersona  {
     
    private String nombre;
    private String apellido;
-   private int NumeroIdentidad;
+   private int cedula;
    
 
     public ClasePersona(String nombre, String apellido, int NumeroIdentidad) {
         this.nombre = nombre;
         this.apellido = apellido;
-        this.NumeroIdentidad = NumeroIdentidad;
+        this.cedula = NumeroIdentidad;
         
     }
 
@@ -39,19 +39,19 @@ public  class  ClasePersona  {
         this.apellido = apellido;
     }
 
-    public int getNumeroIdentidad() {
-        return NumeroIdentidad;
+    public int getCedula() {
+        return cedula;
     }
 
-    public void setNumeroIdentidad(int NumeroIdentidad) {
-        this.NumeroIdentidad = NumeroIdentidad;
+    public void setCedula(int cedula) {
+        this.cedula = cedula;
     }
     
     //public abstract void CalcularFactura();
 
     @Override
     public String toString() {
-        return "ClasePersona{" + "nombre=" + nombre + ", apellido=" + apellido + ", NumeroIdentidad=" + NumeroIdentidad +  '}';
+        return "ClasePersona{" + "nombre=" + nombre + ", apellido=" + apellido + ", NumeroIdentidad=" + cedula +  '}';
     }
     
  
