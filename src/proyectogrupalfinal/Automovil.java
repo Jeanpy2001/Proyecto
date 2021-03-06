@@ -14,11 +14,17 @@ public class Automovil {
     private String modelo;
     private String tipo;
     private String marca;
-    private int cantidad;
+    private int presio;
+    private int anio;
+    private int kilometraje;
 
-    @Override
-    public String toString() {
-        return "Dastos del Automovil[" + "modelo: " + modelo + ", tipo: " + tipo + ", cantidad: " + cantidad + ", marca"+ marca +']';
+    public Automovil(String modelo, String tipo, String marca, int presio, int anio, int kilometraje) {
+        this.modelo = modelo;
+        this.tipo = tipo;
+        this.marca = marca;
+        this.presio = presio;
+        this.anio = anio;
+        this.kilometraje = kilometraje;
     }
 
     public String getModelo() {
@@ -45,14 +51,38 @@ public class Automovil {
         this.marca = marca;
     }
 
-    public int getCantidad() {
-        return cantidad;
+    public int getPresio() {
+        return presio;
     }
 
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
+    public void setPresio(int presio) {
+        this.presio = presio;
     }
 
+    public int getAño() {
+        return anio;
+    }
+
+    public void setAño(int año) {
+        this.anio = año;
+    }
+
+    public int getKilometraje() {
+        return kilometraje;
+    }
+
+    public void setKilometraje(int kilometraje) {
+        this.kilometraje = kilometraje;
+    }
+
+    @Override
+    public String toString() {
+        return "Información{" + "modelo: " + modelo + ", tipo: " + tipo + ", marca: " + marca + ", presio: " + presio + ", año:" + anio + ", kilometraje: " + kilometraje + '}';
+    }
+
+    
+
+    
     
       
 }
