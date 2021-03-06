@@ -13,7 +13,7 @@ public  class ClaseCliente extends ClasePersona{
 
     private int edad;
 
-    public ClaseCliente(int edad, String nombre, String apellido, int NumeroIdentidad, double factura) {
+    public ClaseCliente(int edad, String nombre, String apellido, int NumeroIdentidad) {
         super(nombre, apellido, NumeroIdentidad);
         this.edad = edad;
         
