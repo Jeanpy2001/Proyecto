@@ -664,7 +664,7 @@ lblHyudai.setIcon(imageHYDAI);
     String cedula;
     int edad;
     String fecha;
-    
+    //ClaseEmpleado empleado = new ClaseEmpleado("00000","Jorge","Proaño",1700235645);
     
     try{
         
@@ -676,7 +676,9 @@ lblHyudai.setIcon(imageHYDAI);
     codigo = txtCodigo.getText();
     edad = Integer.parseInt(txtEdad.getText());
     
-    //if(txt)
+    //if(txtNombre.getText().equals()){
+    //}    
+   
     
     }
     catch(NumberFormatException nfe){
