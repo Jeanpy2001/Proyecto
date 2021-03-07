@@ -719,7 +719,8 @@ lblHyudai.setIcon(imageHYDAI);
         if(txtApellido.getText().equals(empleado.getApellido())){
             if(txtCodigo.getText().equals(empleado.getCodigo())){
                 ClaseCliente cliente = new ClaseCliente(edad, nombre1, apellido1,cedula);
-                crearAutomivil();
+                crearAutomivil();    
+                JOptionPane.showMessageDialog(rootPane, "Se guardo los datos de la persona");  
             }
         }
     }    
