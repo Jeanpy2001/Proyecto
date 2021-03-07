@@ -625,7 +625,7 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
         }
         else
         lblAuto.setIcon(imagen5);
-
+//
         // TODO add your handling code here:
     }//GEN-LAST:event_cmbHyundaiItemStateChanged
 
