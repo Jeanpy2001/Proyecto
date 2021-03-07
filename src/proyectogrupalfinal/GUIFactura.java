@@ -90,6 +90,8 @@ public class GUIFactura extends javax.swing.JFrame {
        GuiProyectoFinal obj =  new GuiProyectoFinal();
        obj.setVisible(true);
        this.dispose();
+       
+       
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

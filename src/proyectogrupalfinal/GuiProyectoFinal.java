@@ -663,6 +663,7 @@ lblHyudai.setIcon(imageHYDAI);
         GUIFactura obj1 =  new GUIFactura();
        obj1.setVisible(true);
        this.dispose();
+       
     }//GEN-LAST:event_btnComprarActionPerformed
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
