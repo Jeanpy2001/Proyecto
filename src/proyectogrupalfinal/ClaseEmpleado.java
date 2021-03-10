@@ -12,7 +12,7 @@ package proyectogrupalfinal;
 public class ClaseEmpleado extends ClasePersona {
     private String codigo;
 
-    public ClaseEmpleado(String codigo, String nombre, String apellido, int NumeroIdentidad ) {
+    public ClaseEmpleado(String codigo, String nombre, String apellido, String NumeroIdentidad ) {
         super(nombre, apellido, NumeroIdentidad);
         this.codigo = codigo;
     }
