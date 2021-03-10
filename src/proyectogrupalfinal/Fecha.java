@@ -10,45 +10,16 @@ package proyectogrupalfinal;
  * @author User
  */
 public class Fecha {
-    private int dia;
-    private int mes;
-    private int año;
-
-    public Fecha(int dia, int mes, int año) {
-        this.dia = dia;
-        this.mes = mes;
-        this.año = año;
-    }
-
-    public int getDia() {
-        return dia;
-    }
-
-    public void setDia(int dia) {
-        this.dia = dia;
-    }
-
-    public int getMes() {
-        return mes;
-    }
-
-    public void setMes(int mes) {
-        this.mes = mes;
-    }
-
-    public int getAño() {
-        return año;
-    }
-
-    public void setAño(int año) {
-        this.año = año;
-    }
-
-    @Override
-    public String toString() {
-        return "Fecha[" + dia + "-" + mes + "-" + año + ']';
-    }
+    private String fecha;
     
-    
+    private boolean fechaEsValida(){
+        boolean resultado = this.fecha.matches("^(?:(?:31(\\/|-|\\.)(?:0?[13578]|1[02]))\\1|(?:(?:29|30)(\\/|-|\\.)"
+                + "(?:0?[13-9]|1[0-2])\\2))(?:(?:1[6-9]|[2-9]\\d)?\\d{2})$|^(?:29(\\/|-|\\.)0?2\\3(?:(?:(?:1[6-9]|[2-9]\\d)?"
+                + "(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\\d|2[0-8])(\\/|-|\\.)"
+                + "(?:(?:0?[1-9])|(?:1[0-2]))\\4(?:(?:1[6-9]|[2-9]\\d)?\\d{2})$");
+        return resultado;
+    }
+
+
     
 }
