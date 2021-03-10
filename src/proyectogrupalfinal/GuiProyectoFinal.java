@@ -597,12 +597,12 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
     }//GEN-LAST:event_rbtMercedesActionPerformed
 
     private void rbtBMWActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtBMWActionPerformed
-lblBMW.setIcon(imageBMW);         // TODO add your handling code here:
+        lblBMW.setIcon(imageBMW);         // TODO add your handling code here:
         // TODO add your handling code here:
     }//GEN-LAST:event_rbtBMWActionPerformed
 
     private void rbtHyundaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtHyundaiActionPerformed
-lblHyudai.setIcon(imageHYDAI);         
+        lblHyudai.setIcon(imageHYDAI);         
 
         // TODO add your handling code here:
     }//GEN-LAST:event_rbtHyundaiActionPerformed
@@ -667,10 +667,10 @@ lblHyudai.setIcon(imageHYDAI);
     
     String nombre1;
     String apellido1;
-    int cedula;
+    String cedula;
     int edad;
     String fecha;
-    ClaseEmpleado empleado = new ClaseEmpleado("00000","Jorge","Proaño",1700235645);
+    ClaseEmpleado empleado = new ClaseEmpleado("00000","Jorge","Proaño","1700235645");
     
     
     try{
@@ -678,7 +678,7 @@ lblHyudai.setIcon(imageHYDAI);
     
     nombre1= txtNombre1.getText();
     apellido1= txtApellido1.getText();
-    cedula = Integer.parseInt(txtCedula.getText());
+    cedula = txtCedula.getText();
     edad = Integer.parseInt(txtEdad.getText());
     
     if(txtNombre.getText().equals(empleado.getNombre())){
