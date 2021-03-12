@@ -671,21 +671,38 @@ GUIFactura.lblImagen.setIcon(lblAuto.getIcon());
 
 
 if(rbtMercedes.isSelected()){
-GUIFactura.lblimaauto.setIcon(lblMercedes.getIcon());
- GUIFactura.txtmarcaf.setText((String) cbmMercedes.getSelectedItem());
+    GUIFactura.lblimaauto.setIcon(lblMercedes.getIcon());
+    GUIFactura.txtmarcaf.setText((String) cbmMercedes.getSelectedItem());
+    String aux = (String) cbmMercedes.getSelectedItem();
+                if(aux.equals("Mercedes Benzs Clase B B 180D")){
+                    GUIFactura.txtPrecio.setText(String.valueOf(auto[0].getPrecio()));
+                }
+                if(aux.equals("Mercedes Benzs GLA")){
+                    GUIFactura.txtPrecio.setText(String.valueOf(auto[1].getPrecio()));
+                }
 }
 if(rbtBMW.isSelected()){
     GUIFactura.lblimaauto.setIcon(jLabel4.getIcon());
     GUIFactura.txtmarcaf.setText((String) cbmBMW.getSelectedItem());
     String aux = (String) cbmBMW.getSelectedItem();
         if(aux.equals("BMW Serie 7")){
-            //GUIFactura.txtPrecio.setText(auto[2].
-                txaInformacion.setText(auto[2].toString());
+            GUIFactura.txtPrecio.setText(String.valueOf(auto[2].getPrecio()));
         }
+        if(aux.equals("BMW GRT M3")){
+            GUIFactura.txtPrecio.setText(String.valueOf(auto[3].getPrecio()));        
+        }
+        
     }
 if(rbtHyundai.isSelected()){
     GUIFactura.lblimaauto.setIcon(jLabel5.getIcon());
- GUIFactura.txtmarcaf.setText((String) cmbHyundai.getSelectedItem());
+    GUIFactura.txtmarcaf.setText((String) cmbHyundai.getSelectedItem());
+    String aux = (String) cmbHyundai.getSelectedItem();
+                if(aux.equals("Accent")){
+                    GUIFactura.txtPrecio.setText(String.valueOf(auto[4].getPrecio()));
+                }
+                if(aux.equals("Verna")){
+                     GUIFactura.txtPrecio.setText(String.valueOf(auto[5].getPrecio()));
+                }
 
 }
 GUIFactura.txtColor.setText((String) cmbColor.getSelectedItem());
