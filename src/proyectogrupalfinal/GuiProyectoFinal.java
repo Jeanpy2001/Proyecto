@@ -719,7 +719,6 @@ GUIFactura.txtColor.setText((String) cmbColor.getSelectedItem());
             }
         }
     }    
-   
     
     }
     catch(NumberFormatException nfe){
