@@ -74,7 +74,7 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
         rbtMercedes = new javax.swing.JRadioButton();
         rbtBMW = new javax.swing.JRadioButton();
         rbtHyundai = new javax.swing.JRadioButton();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        cmbColor = new javax.swing.JComboBox<>();
         jLabel12 = new javax.swing.JLabel();
         lblMercedes = new javax.swing.JLabel();
         lblBMW = new javax.swing.JLabel();
@@ -207,7 +207,7 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
             }
         });
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Rojo", "Blanco", "Negro", "Gris" }));
+        cmbColor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Rojo", "Blanco", "Negro", "Gris" }));
 
         jLabel12.setText("Características:");
 
@@ -355,7 +355,7 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
                                     .addGroup(jPanel3Layout.createSequentialGroup()
                                         .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(cmbColor, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(42, 42, 42)
                                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 506, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(btnInformacion, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -392,7 +392,7 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel10)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(cmbColor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(30, 30, 30)
                 .addComponent(btnComprar)
@@ -668,6 +668,25 @@ GUIFactura.txtFecha1.setText(txtFecha.getText());
        
 GUIFactura.lblImagen.setIcon(lblAuto.getIcon());
 
+
+
+if(rbtMercedes.isSelected()){
+GUIFactura.lblimaauto.setIcon(lblMercedes.getIcon());
+ GUIFactura.txtmarcaf.setText((String) cbmMercedes.getSelectedItem());
+}
+if(rbtBMW.isSelected()){
+    GUIFactura.lblimaauto.setIcon(jLabel4.getIcon());
+ GUIFactura.txtmarcaf.setText((String) cbmBMW.getSelectedItem());
+    }
+if(rbtHyundai.isSelected()){
+    GUIFactura.lblimaauto.setIcon(jLabel5.getIcon());
+ GUIFactura.txtmarcaf.setText((String) cmbHyundai.getSelectedItem());
+
+}
+GUIFactura.txtColor.setText((String) cmbColor.getSelectedItem());
+
+
+
        
     }//GEN-LAST:event_btnComprarActionPerformed
 
@@ -779,8 +798,8 @@ GUIFactura.lblImagen.setIcon(lblAuto.getIcon());
     private javax.swing.JButton btnInformacion;
     private javax.swing.JComboBox<String> cbmBMW;
     private javax.swing.JComboBox<String> cbmMercedes;
+    private javax.swing.JComboBox<String> cmbColor;
     private javax.swing.JComboBox<String> cmbHyundai;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
