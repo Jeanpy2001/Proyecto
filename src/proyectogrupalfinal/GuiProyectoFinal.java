@@ -676,7 +676,12 @@ GUIFactura.lblimaauto.setIcon(lblMercedes.getIcon());
 }
 if(rbtBMW.isSelected()){
     GUIFactura.lblimaauto.setIcon(jLabel4.getIcon());
- GUIFactura.txtmarcaf.setText((String) cbmBMW.getSelectedItem());
+    GUIFactura.txtmarcaf.setText((String) cbmBMW.getSelectedItem());
+    String aux = (String) cbmBMW.getSelectedItem();
+        if(aux.equals("BMW Serie 7")){
+            //GUIFactura.txtPrecio.setText(auto[2].
+                txaInformacion.setText(auto[2].toString());
+        }
     }
 if(rbtHyundai.isSelected()){
     GUIFactura.lblimaauto.setIcon(jLabel5.getIcon());
@@ -698,13 +703,14 @@ GUIFactura.txtColor.setText((String) cmbColor.getSelectedItem());
     String apellido1;
     String cedula;
     int edad;
-    String fecha;
+    Fecha fecha;
+    String aux;
     ClaseEmpleado empleado = new ClaseEmpleado("00000","Jorge","Proaño","1700235645");
     
     
     try{
         
-    
+    aux = txtFecha.getText();
     nombre1= txtNombre1.getText();
     apellido1= txtApellido1.getText();
     cedula = txtCedula.getText();
@@ -713,6 +719,7 @@ GUIFactura.txtColor.setText((String) cmbColor.getSelectedItem());
     if(txtNombre.getText().equals(empleado.getNombre())){
         if(txtApellido.getText().equals(empleado.getApellido())){
             if(txtCodigo.getText().equals(empleado.getCodigo())){
+                //if ()
                 ClaseCliente cliente = new ClaseCliente(edad, nombre1, apellido1,cedula);
                 crearAutomivil();    
                 

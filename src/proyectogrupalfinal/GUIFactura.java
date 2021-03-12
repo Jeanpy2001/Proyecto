@@ -59,14 +59,14 @@ public class GUIFactura extends javax.swing.JFrame {
         txtEdadco = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         lblImagen = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
+        txtPrecioFinal = new javax.swing.JTextField();
         lblimaauto = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         txtmarcaf = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
+        txtPrecio = new javax.swing.JTextField();
         lblcolor = new javax.swing.JLabel();
         txtColor = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
@@ -248,9 +248,9 @@ public class GUIFactura extends javax.swing.JFrame {
             }
         });
 
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+        txtPrecio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
+                txtPrecioActionPerformed(evt);
             }
         });
 
@@ -281,8 +281,8 @@ public class GUIFactura extends javax.swing.JFrame {
                     .addComponent(txtmarcaf, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(txtColor, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 96, Short.MAX_VALUE)
-                        .addComponent(jTextField10, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.LEADING))))
+                        .addComponent(txtPrecioFinal, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(txtPrecio, javax.swing.GroupLayout.Alignment.LEADING))))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -307,11 +307,11 @@ public class GUIFactura extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel19)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel20)
-                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtPrecioFinal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(22, 22, 22))
         );
 
@@ -411,9 +411,9 @@ JOptionPane.showMessageDialog(rootPane,"Gracias por su Compra");
         // TODO add your handling code here:
     }//GEN-LAST:event_txtmarcafActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void txtPrecioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPrecioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_txtPrecioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -477,9 +477,7 @@ JOptionPane.showMessageDialog(rootPane,"Gracias por su Compra");
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
     public static javax.swing.JLabel lblImagen;
     private javax.swing.JLabel lblcolor;
     public static javax.swing.JLabel lblimaauto;
@@ -487,6 +485,8 @@ JOptionPane.showMessageDialog(rootPane,"Gracias por su Compra");
     public static javax.swing.JTextField txtEdadco;
     public static javax.swing.JTextField txtFecha1;
     public static javax.swing.JTextField txtNombcom;
+    private javax.swing.JTextField txtPrecio;
+    private javax.swing.JTextField txtPrecioFinal;
     public static javax.swing.JTextField txtapellidocom;
     public static javax.swing.JTextField txtapellv;
     public static javax.swing.JTextField txtcodigv;
