@@ -666,6 +666,8 @@ GUIFactura.CIcomp.setText(txtCedula.getText());
 GUIFactura.txtEdadco.setText(txtEdad.getText());
 GUIFactura.txtFecha1.setText(txtFecha.getText());
        
+GUIFactura.lblImagen.setIcon(lblAuto.getIcon());
+
        
     }//GEN-LAST:event_btnComprarActionPerformed
 
