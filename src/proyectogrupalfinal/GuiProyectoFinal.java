@@ -25,8 +25,8 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
                 ImageIcon imagen4= new ImageIcon("descarga.jfif");
                 ImageIcon imagen5= new ImageIcon("descarga (1).jfif"); 
 
-       Factura e1= new Factura();
-       Fecha c1;
+        Factura e1= new Factura();
+        Fecha c1;
        
        
        
@@ -34,7 +34,6 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
      * Creates new form GuiProyectoFinal
      */
     public GuiProyectoFinal() {
-    
         initComponents();
         
         e1 = new Factura();
@@ -560,12 +559,10 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
         if (indice.equals(0))
         {
             lblAuto.setIcon(null);
-
         }
         else if (indice.equals(1))
         {
             lblAuto.setIcon(imagen2);
-
         }
         else
         lblAuto.setIcon(imagen3);
@@ -579,12 +576,10 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
         if (indice.equals(0))
         {
             lblAuto.setIcon(null);
-
         }
         else if (indice.equals(1))
         {
             lblAuto.setIcon(imagen4);
-
         }
         else
         lblAuto.setIcon(imagen5);
@@ -613,8 +608,7 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
         String aux,aux1,aux2;
         crearAutomivil();
 
-        try{
-            
+        try{ 
             if(rbtBMW.isSelected()){
                aux = (String) cbmBMW.getSelectedItem();
                 if(aux.equals("BMW Serie 7")){
@@ -642,21 +636,19 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
                 if(aux.equals("Mercedes Benzs GLA")){
                     txaInformacion.setText(auto[1].toString());
                 }
-            }
-                
+            }      
         }
         catch(Exception e){
            JOptionPane.showConfirmDialog(rootPane, "ERROR");
         }
-      
     }//GEN-LAST:event_btnInformacionActionPerformed
 
     private void btnComprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarActionPerformed
         // TODO add your handling code here:
         
         GUIFactura obj1 =  new GUIFactura();
-       obj1.setVisible(true);
-       this.dispose();
+        obj1.setVisible(true);
+        this.dispose();
         GUIFactura.txtnombeven.setText(txtNombre.getText());
         GUIFactura.txtapellv.setText(txtApellido.getText());
         GUIFactura.txtcodigv.setText(txtCodigo.getText());
