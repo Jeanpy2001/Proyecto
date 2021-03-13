@@ -87,7 +87,7 @@ public class Automovil {
 
     @Override
     public String toString() {
-        return "Información\n" + "Modelo: " + modelo + "\nTipo: " + tipo + "\nMarca: " + marca + "\nPrecio: " + precio + "\nAño:" + anio + "\nKilometraje: " + kilometraje ;
+        return "Información\n" + "Modelo: " + modelo + "\nTipo: " + tipo + "\nMarca: " + marca + "\nPrecio:$ " + precio + "\nAño:" + anio + "\nKilometraje: " + kilometraje ;
     }
     
     
