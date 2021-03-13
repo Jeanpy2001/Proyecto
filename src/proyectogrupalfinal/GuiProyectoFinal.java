@@ -715,6 +715,7 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
 
         String nombre1;
         String apellido1;
+        Cedula id = new Cedula();
         String cedula;
         int edad;
         Fecha fecha = new Fecha();
@@ -727,6 +728,7 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
             aux = txtFecha.getText();
             nombre1= txtNombre1.getText();
             apellido1= txtApellido1.getText();
+            id.setId(txtCedula.getText());
             cedula = txtCedula.getText();
             edad = Integer.parseInt(txtEdad.getText());
             fecha.setFecha(txtFecha.getText());
@@ -734,17 +736,19 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
             if(fecha.EsValida()){
             } 
             else{
-                JOptionPane.showMessageDialog(rootPane, "Por favor ingrese una fecha que sea válida");  
+                JOptionPane.showMessageDialog(rootPane, "Por favor ingrese una fecha que sea válida", "ERROR",2);
             }
             
             if(txtNombre.getText().equals(empleado.getNombre())){
                 if(txtApellido.getText().equals(empleado.getApellido())){
                     if(txtCodigo.getText().equals(empleado.getCodigo())){
-                        //if(cedula.)
-                        //if ()
-                        ClaseCliente cliente = new ClaseCliente(edad, nombre1, apellido1,cedula);
-                        crearAutomivil();    
-
+                        if(id.esValida()){
+                            ClaseCliente cliente = new ClaseCliente(edad, nombre1, apellido1,cedula);
+                            crearAutomivil();    
+                        }
+                        else{
+                            JOptionPane.showMessageDialog(rootPane, "Por favor ingrese una cédula válida", "ERROR",2);
+                        }
                     }
                 }
             }    
