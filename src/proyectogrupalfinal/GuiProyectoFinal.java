@@ -649,13 +649,13 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
         GUIFactura obj1 =  new GUIFactura();
         obj1.setVisible(true);
         this.dispose();
-        GUIFactura.txtnombeven.setText(txtNombre.getText());
-        GUIFactura.txtapellv.setText(txtApellido.getText());
-        GUIFactura.txtcodigv.setText(txtCodigo.getText());
-        GUIFactura.txtNombcom.setText(txtNombre1.getText());
-        GUIFactura.txtapellidocom.setText(txtApellido1.getText());
-        GUIFactura.CIcomp.setText(txtCedula.getText());
-        GUIFactura.txtEdadco.setText(txtEdad.getText());
+        GUIFactura.txtNombeVendedor.setText(txtNombre.getText());
+        GUIFactura.txtApelliidoVendedor.setText(txtApellido.getText());
+        GUIFactura.txtCodigoVendedor.setText(txtCodigo.getText());
+        GUIFactura.txtNombComprador.setText(txtNombre1.getText());
+        GUIFactura.txtApellidoComprador.setText(txtApellido1.getText());
+        GUIFactura.txtCIComprador.setText(txtCedula.getText());
+        GUIFactura.txtEdadComprador.setText(txtEdad.getText());
         GUIFactura.txtFecha1.setText(txtFecha.getText());
 
         GUIFactura.lblImagen.setIcon(lblAuto.getIcon());
@@ -664,7 +664,7 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
 
         if(rbtMercedes.isSelected()){
             GUIFactura.lblimaauto.setIcon(lblMercedes.getIcon());
-            GUIFactura.txtmarcaf.setText((String) cbmMercedes.getSelectedItem());
+            GUIFactura.txtMarcaVehiculo.setText((String) cbmMercedes.getSelectedItem());
             String aux = (String) cbmMercedes.getSelectedItem();
                         if(aux.equals("Mercedes Benzs Clase B B 180D")){
                             GUIFactura.txtPrecio.setText(String.valueOf(auto[0].getPrecio()));
@@ -678,7 +678,7 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
         }
         if(rbtBMW.isSelected()){
             GUIFactura.lblimaauto.setIcon(jLabel4.getIcon());
-            GUIFactura.txtmarcaf.setText((String) cbmBMW.getSelectedItem());
+            GUIFactura.txtMarcaVehiculo.setText((String) cbmBMW.getSelectedItem());
             String aux = (String) cbmBMW.getSelectedItem();
                 if(aux.equals("BMW Serie 7")){
                     GUIFactura.txtPrecio.setText(String.valueOf(auto[2].getPrecio()));
@@ -692,7 +692,7 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
             }
         if(rbtHyundai.isSelected()){
             GUIFactura.lblimaauto.setIcon(jLabel5.getIcon());
-            GUIFactura.txtmarcaf.setText((String) cmbHyundai.getSelectedItem());
+            GUIFactura.txtMarcaVehiculo.setText((String) cmbHyundai.getSelectedItem());
             String aux = (String) cmbHyundai.getSelectedItem();
                         if(aux.equals("Accent")){
                             GUIFactura.txtPrecio.setText(String.valueOf(auto[4].getPrecio()));
