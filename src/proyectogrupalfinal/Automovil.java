@@ -15,6 +15,7 @@ public class Automovil {
     private String tipo;
     private String marca;
     private double precio;
+    private double precioFinal;
     private int anio;
     private int kilometraje;
 
@@ -78,6 +79,10 @@ public class Automovil {
 
     public void setKilometraje(int kilometraje) {
         this.kilometraje = kilometraje;
+    }
+    
+    public double calcularPrecioFinal(){
+        return this.precioFinal = this.precio + (this.precio * 0.12);  
     }
 
     @Override

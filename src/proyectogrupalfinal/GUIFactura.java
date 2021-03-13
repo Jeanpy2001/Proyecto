@@ -486,7 +486,7 @@ JOptionPane.showMessageDialog(rootPane,"Gracias por su Compra");
     public static javax.swing.JTextField txtFecha1;
     public static javax.swing.JTextField txtNombcom;
     public static javax.swing.JTextField txtPrecio;
-    private javax.swing.JTextField txtPrecioFinal;
+    public static javax.swing.JTextField txtPrecioFinal;
     public static javax.swing.JTextField txtapellidocom;
     public static javax.swing.JTextField txtapellv;
     public static javax.swing.JTextField txtcodigv;

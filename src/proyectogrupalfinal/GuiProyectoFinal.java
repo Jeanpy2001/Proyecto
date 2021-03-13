@@ -618,7 +618,7 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
             if(rbtBMW.isSelected()){
                aux = (String) cbmBMW.getSelectedItem();
                 if(aux.equals("BMW Serie 7")){
-                    txaInformacion.setText(auto[2].toString());
+                    txaInformacion.setText(auto[2].toString());                 
                 }
                 if(aux.equals("BMW GRT M3")){
                     txaInformacion.setText("");
@@ -676,9 +676,12 @@ if(rbtMercedes.isSelected()){
     String aux = (String) cbmMercedes.getSelectedItem();
                 if(aux.equals("Mercedes Benzs Clase B B 180D")){
                     GUIFactura.txtPrecio.setText(String.valueOf(auto[0].getPrecio()));
+                    GUIFactura.txtPrecioFinal.setText(String.valueOf(auto[0].calcularPrecioFinal()));
+                    
                 }
                 if(aux.equals("Mercedes Benzs GLA")){
                     GUIFactura.txtPrecio.setText(String.valueOf(auto[1].getPrecio()));
+                    GUIFactura.txtPrecioFinal.setText(String.valueOf(auto[1].calcularPrecioFinal()));
                 }
 }
 if(rbtBMW.isSelected()){
@@ -687,9 +690,11 @@ if(rbtBMW.isSelected()){
     String aux = (String) cbmBMW.getSelectedItem();
         if(aux.equals("BMW Serie 7")){
             GUIFactura.txtPrecio.setText(String.valueOf(auto[2].getPrecio()));
+            GUIFactura.txtPrecioFinal.setText(String.valueOf(auto[2].calcularPrecioFinal()));
         }
         if(aux.equals("BMW GRT M3")){
-            GUIFactura.txtPrecio.setText(String.valueOf(auto[3].getPrecio()));        
+            GUIFactura.txtPrecio.setText(String.valueOf(auto[3].getPrecio())); 
+            GUIFactura.txtPrecioFinal.setText(String.valueOf(auto[3].calcularPrecioFinal()));
         }
         
     }
@@ -699,9 +704,11 @@ if(rbtHyundai.isSelected()){
     String aux = (String) cmbHyundai.getSelectedItem();
                 if(aux.equals("Accent")){
                     GUIFactura.txtPrecio.setText(String.valueOf(auto[4].getPrecio()));
+                    GUIFactura.txtPrecioFinal.setText(String.valueOf(auto[4].calcularPrecioFinal()));
                 }
                 if(aux.equals("Verna")){
                      GUIFactura.txtPrecio.setText(String.valueOf(auto[5].getPrecio()));
+                     GUIFactura.txtPrecioFinal.setText(String.valueOf(auto[5].calcularPrecioFinal()));
                 }
 
 }
