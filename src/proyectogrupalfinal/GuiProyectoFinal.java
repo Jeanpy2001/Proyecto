@@ -717,7 +717,7 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
         String apellido1;
         String cedula;
         int edad;
-        Fecha fecha;
+        Fecha fecha = new Fecha();
         String aux;
         ClaseEmpleado empleado = new ClaseEmpleado("00000","Jorge","Proaño","1700235645");
     
@@ -729,19 +729,29 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
             apellido1= txtApellido1.getText();
             cedula = txtCedula.getText();
             edad = Integer.parseInt(txtEdad.getText());
-    
-        if(txtNombre.getText().equals(empleado.getNombre())){
-            if(txtApellido.getText().equals(empleado.getApellido())){
-                if(txtCodigo.getText().equals(empleado.getCodigo())){
-                    //if ()
-                    ClaseCliente cliente = new ClaseCliente(edad, nombre1, apellido1,cedula);
-                    crearAutomivil();    
-                
-                }
+            fecha.setFecha(txtFecha.getText());
+            
+            if(fecha.EsValida()){
+            } 
+            else{
+                JOptionPane.showMessageDialog(rootPane, "Por favor ingrese una fecha que sea válida");  
             }
-        }    
-    
+            
+            if(txtNombre.getText().equals(empleado.getNombre())){
+                if(txtApellido.getText().equals(empleado.getApellido())){
+                    if(txtCodigo.getText().equals(empleado.getCodigo())){
+                        //if(cedula.)
+                        //if ()
+                        ClaseCliente cliente = new ClaseCliente(edad, nombre1, apellido1,cedula);
+                        crearAutomivil();    
+
+                    }
+                }
+            }    
+
+ 
     }
+            
     catch(NumberFormatException nfe){
         JOptionPane.showMessageDialog(rootPane, "Por favor debe llenar todos las casillas");  
         }
