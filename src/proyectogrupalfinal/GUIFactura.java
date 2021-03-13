@@ -18,6 +18,18 @@ public class GUIFactura extends javax.swing.JFrame {
      */
     public GUIFactura() {
         initComponents();
+        txtColor.setEditable(false);
+        txtEdadComprador.setEditable(false);
+        txtFecha1.setEditable(false);
+        txtNombComprador.setEditable(false);
+        txtPrecio.setEditable(false);
+        txtPrecioFinal.setEditable(false);
+        txtApellidoComprador.setEditable(false);
+        txtApelliidoVendedor.setEditable(false);
+        txtCodigoVendedor.setEditable(false);
+        txtMarcaVehiculo.setEditable(false);
+        txtNombeVendedor.setEditable(false);
+        
     }
 
     /**
@@ -46,17 +58,17 @@ public class GUIFactura extends javax.swing.JFrame {
         lblNombreVendedor = new javax.swing.JLabel();
         lblApellidoVendedor = new javax.swing.JLabel();
         lblCodigo = new javax.swing.JLabel();
-        txtnombeven = new javax.swing.JTextField();
-        txtapellv = new javax.swing.JTextField();
-        txtcodigv = new javax.swing.JTextField();
+        txtNombeVendedor = new javax.swing.JTextField();
+        txtApelliidoVendedor = new javax.swing.JTextField();
+        txtCodigoVendedor = new javax.swing.JTextField();
         lblNombreComprador = new javax.swing.JLabel();
-        txtNombcom = new javax.swing.JTextField();
+        txtNombComprador = new javax.swing.JTextField();
         lblApellidoComprador = new javax.swing.JLabel();
-        txtapellidocom = new javax.swing.JTextField();
+        txtApellidoComprador = new javax.swing.JTextField();
         lblId = new javax.swing.JLabel();
-        CIcomp = new javax.swing.JTextField();
+        txtCIComprador = new javax.swing.JTextField();
         lblEdad = new javax.swing.JLabel();
-        txtEdadco = new javax.swing.JTextField();
+        txtEdadComprador = new javax.swing.JTextField();
         pnlDatosVehiculo = new javax.swing.JPanel();
         lblImagen = new javax.swing.JLabel();
         txtPrecioFinal = new javax.swing.JTextField();
@@ -65,7 +77,7 @@ public class GUIFactura extends javax.swing.JFrame {
         lblModelo = new javax.swing.JLabel();
         lblPrecio = new javax.swing.JLabel();
         lblPrecioFInal = new javax.swing.JLabel();
-        txtmarcaf = new javax.swing.JTextField();
+        txtMarcaVehiculo = new javax.swing.JTextField();
         txtPrecio = new javax.swing.JTextField();
         lblColor = new javax.swing.JLabel();
         txtColor = new javax.swing.JTextField();
@@ -175,15 +187,15 @@ public class GUIFactura extends javax.swing.JFrame {
                     .addGroup(pnlDatosVendYCompLayout.createSequentialGroup()
                         .addComponent(lblNombreVendedor)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtnombeven, javax.swing.GroupLayout.DEFAULT_SIZE, 153, Short.MAX_VALUE))
+                        .addComponent(txtNombeVendedor, javax.swing.GroupLayout.DEFAULT_SIZE, 153, Short.MAX_VALUE))
                     .addGroup(pnlDatosVendYCompLayout.createSequentialGroup()
                         .addGroup(pnlDatosVendYCompLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblApellidoVendedor)
                             .addComponent(lblCodigo))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(pnlDatosVendYCompLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtapellv, javax.swing.GroupLayout.DEFAULT_SIZE, 153, Short.MAX_VALUE)
-                            .addComponent(txtcodigv))))
+                            .addComponent(txtApelliidoVendedor, javax.swing.GroupLayout.DEFAULT_SIZE, 153, Short.MAX_VALUE)
+                            .addComponent(txtCodigoVendedor))))
                 .addGap(161, 161, 161)
                 .addGroup(pnlDatosVendYCompLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlDatosVendYCompLayout.createSequentialGroup()
@@ -192,16 +204,16 @@ public class GUIFactura extends javax.swing.JFrame {
                             .addComponent(lblApellidoComprador))
                         .addGap(18, 18, 18)
                         .addGroup(pnlDatosVendYCompLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtapellidocom, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtNombcom, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txtApellidoComprador, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtNombComprador, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(pnlDatosVendYCompLayout.createSequentialGroup()
                         .addGroup(pnlDatosVendYCompLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblId)
                             .addComponent(lblEdad))
                         .addGap(36, 36, 36)
                         .addGroup(pnlDatosVendYCompLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(CIcomp, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtEdadco, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(txtCIComprador, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtEdadComprador, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(0, 49, Short.MAX_VALUE))
         );
         pnlDatosVendYCompLayout.setVerticalGroup(
@@ -210,25 +222,25 @@ public class GUIFactura extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(pnlDatosVendYCompLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblNombreVendedor)
-                    .addComponent(txtnombeven, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNombeVendedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblNombreComprador)
-                    .addComponent(txtNombcom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtNombComprador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(pnlDatosVendYCompLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblApellidoVendedor)
-                    .addComponent(txtapellv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtApelliidoVendedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblApellidoComprador)
-                    .addComponent(txtapellidocom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtApellidoComprador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(pnlDatosVendYCompLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCodigo)
-                    .addComponent(txtcodigv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtCodigoVendedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblId)
-                    .addComponent(CIcomp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtCIComprador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(pnlDatosVendYCompLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblEdad)
-                    .addComponent(txtEdadco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtEdadComprador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
 
@@ -242,9 +254,9 @@ public class GUIFactura extends javax.swing.JFrame {
 
         lblPrecioFInal.setText("Precio Final:      $");
 
-        txtmarcaf.addActionListener(new java.awt.event.ActionListener() {
+        txtMarcaVehiculo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtmarcafActionPerformed(evt);
+                txtMarcaVehiculoActionPerformed(evt);
             }
         });
 
@@ -277,7 +289,7 @@ public class GUIFactura extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(pnlDatosVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblimaauto, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtmarcaf, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtMarcaVehiculo, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(pnlDatosVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(txtColor, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 96, Short.MAX_VALUE)
                         .addComponent(txtPrecioFinal, javax.swing.GroupLayout.Alignment.LEADING)
@@ -297,7 +309,7 @@ public class GUIFactura extends javax.swing.JFrame {
                         .addComponent(lblMarca)))
                 .addGap(18, 18, 18)
                 .addGroup(pnlDatosVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtmarcaf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtMarcaVehiculo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblModelo))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
                 .addGroup(pnlDatosVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -406,9 +418,9 @@ JOptionPane.showMessageDialog(rootPane,"Gracias por su Compra");
         // TODO add your handling code here:
     }//GEN-LAST:event_btnAceptarActionPerformed
 
-    private void txtmarcafActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtmarcafActionPerformed
+    private void txtMarcaVehiculoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMarcaVehiculoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtmarcafActionPerformed
+    }//GEN-LAST:event_txtMarcaVehiculoActionPerformed
 
     private void txtPrecioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPrecioActionPerformed
         // TODO add your handling code here:
@@ -450,7 +462,6 @@ JOptionPane.showMessageDialog(rootPane,"Gracias por su Compra");
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public static javax.swing.JTextField CIcomp;
     private javax.swing.JButton btnAceptar;
     private javax.swing.JButton btnCancelar;
     private javax.swing.JLabel jLabel1;
@@ -480,17 +491,18 @@ JOptionPane.showMessageDialog(rootPane,"Gracias por su Compra");
     private javax.swing.JPanel pnlDatos;
     private javax.swing.JPanel pnlDatosVehiculo;
     private javax.swing.JPanel pnlDatosVendYComp;
+    public static javax.swing.JTextField txtApellidoComprador;
+    public static javax.swing.JTextField txtApelliidoVendedor;
+    public static javax.swing.JTextField txtCIComprador;
+    public static javax.swing.JTextField txtCodigoVendedor;
     public static javax.swing.JTextField txtColor;
-    public static javax.swing.JTextField txtEdadco;
+    public static javax.swing.JTextField txtEdadComprador;
     public static javax.swing.JTextField txtFecha1;
-    public static javax.swing.JTextField txtNombcom;
+    public static javax.swing.JTextField txtMarcaVehiculo;
+    public static javax.swing.JTextField txtNombComprador;
+    public static javax.swing.JTextField txtNombeVendedor;
     private javax.swing.JTextField txtNumFactura;
     public static javax.swing.JTextField txtPrecio;
     public static javax.swing.JTextField txtPrecioFinal;
-    public static javax.swing.JTextField txtapellidocom;
-    public static javax.swing.JTextField txtapellv;
-    public static javax.swing.JTextField txtcodigv;
-    public static javax.swing.JTextField txtmarcaf;
-    public static javax.swing.JTextField txtnombeven;
     // End of variables declaration//GEN-END:variables
 }

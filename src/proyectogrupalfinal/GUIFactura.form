@@ -260,7 +260,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="lblNombreVendedor" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="txtnombeven" pref="153" max="32767" attributes="0"/>
+                              <Component id="txtNombeVendedor" pref="153" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -269,8 +269,8 @@
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="txtapellv" alignment="0" pref="153" max="32767" attributes="0"/>
-                                  <Component id="txtcodigv" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtApelliidoVendedor" alignment="0" pref="153" max="32767" attributes="0"/>
+                                  <Component id="txtCodigoVendedor" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -283,8 +283,8 @@
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="txtapellidocom" min="-2" pref="145" max="-2" attributes="0"/>
-                                  <Component id="txtNombcom" alignment="0" min="-2" pref="145" max="-2" attributes="0"/>
+                                  <Component id="txtApellidoComprador" min="-2" pref="145" max="-2" attributes="0"/>
+                                  <Component id="txtNombComprador" alignment="0" min="-2" pref="145" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -294,8 +294,8 @@
                               </Group>
                               <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="CIcomp" min="-2" pref="145" max="-2" attributes="0"/>
-                                  <Component id="txtEdadco" min="-2" pref="85" max="-2" attributes="0"/>
+                                  <Component id="txtCIComprador" min="-2" pref="145" max="-2" attributes="0"/>
+                                  <Component id="txtEdadComprador" min="-2" pref="85" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -309,28 +309,28 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblNombreVendedor" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtnombeven" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtNombeVendedor" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lblNombreComprador" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtNombcom" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtNombComprador" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblApellidoVendedor" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtapellv" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtApelliidoVendedor" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lblApellidoComprador" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtapellidocom" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtApellidoComprador" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblCodigo" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtcodigv" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtCodigoVendedor" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lblId" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="CIcomp" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtCIComprador" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblEdad" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtEdadco" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtEdadComprador" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="13" max="32767" attributes="0"/>
                   </Group>
@@ -353,17 +353,17 @@
                 <Property name="text" type="java.lang.String" value="Codigo del Vendedor:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtnombeven">
+            <Component class="javax.swing.JTextField" name="txtNombeVendedor">
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtapellv">
+            <Component class="javax.swing.JTextField" name="txtApelliidoVendedor">
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtcodigv">
+            <Component class="javax.swing.JTextField" name="txtCodigoVendedor">
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
@@ -373,7 +373,7 @@
                 <Property name="text" type="java.lang.String" value="Nombre del Comprador:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtNombcom">
+            <Component class="javax.swing.JTextField" name="txtNombComprador">
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
@@ -383,7 +383,7 @@
                 <Property name="text" type="java.lang.String" value="Apellido Del comprador:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtapellidocom">
+            <Component class="javax.swing.JTextField" name="txtApellidoComprador">
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
@@ -393,7 +393,7 @@
                 <Property name="text" type="java.lang.String" value="C.I. del Comprador:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="CIcomp">
+            <Component class="javax.swing.JTextField" name="txtCIComprador">
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
@@ -403,7 +403,7 @@
                 <Property name="text" type="java.lang.String" value="Edad:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtEdadco">
+            <Component class="javax.swing.JTextField" name="txtEdadComprador">
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
@@ -442,7 +442,7 @@
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="lblimaauto" min="-2" pref="224" max="-2" attributes="0"/>
-                          <Component id="txtmarcaf" min="-2" pref="261" max="-2" attributes="0"/>
+                          <Component id="txtMarcaVehiculo" min="-2" pref="261" max="-2" attributes="0"/>
                           <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                               <Component id="txtColor" alignment="0" pref="96" max="32767" attributes="0"/>
                               <Component id="txtPrecioFinal" alignment="0" max="32767" attributes="0"/>
@@ -469,7 +469,7 @@
                       </Group>
                       <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="txtmarcaf" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtMarcaVehiculo" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lblModelo" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="21" max="32767" attributes="0"/>
@@ -528,9 +528,9 @@
                 <Property name="text" type="java.lang.String" value="Precio Final:      $"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtmarcaf">
+            <Component class="javax.swing.JTextField" name="txtMarcaVehiculo">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtmarcafActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtMarcaVehiculoActionPerformed"/>
               </Events>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
