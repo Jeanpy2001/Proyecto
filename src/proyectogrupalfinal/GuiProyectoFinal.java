@@ -657,62 +657,62 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
         GUIFactura obj1 =  new GUIFactura();
        obj1.setVisible(true);
        this.dispose();
-GUIFactura.txtnombeven.setText(txtNombre.getText());
-GUIFactura.txtapellv.setText(txtApellido.getText());
-GUIFactura.txtcodigv.setText(txtCodigo.getText());
-GUIFactura.txtNombcom.setText(txtNombre1.getText());
-GUIFactura.txtapellidocom.setText(txtApellido1.getText());
-GUIFactura.CIcomp.setText(txtCedula.getText());
-GUIFactura.txtEdadco.setText(txtEdad.getText());
-GUIFactura.txtFecha1.setText(txtFecha.getText());
-       
-GUIFactura.lblImagen.setIcon(lblAuto.getIcon());
+        GUIFactura.txtnombeven.setText(txtNombre.getText());
+        GUIFactura.txtapellv.setText(txtApellido.getText());
+        GUIFactura.txtcodigv.setText(txtCodigo.getText());
+        GUIFactura.txtNombcom.setText(txtNombre1.getText());
+        GUIFactura.txtapellidocom.setText(txtApellido1.getText());
+        GUIFactura.CIcomp.setText(txtCedula.getText());
+        GUIFactura.txtEdadco.setText(txtEdad.getText());
+        GUIFactura.txtFecha1.setText(txtFecha.getText());
+
+        GUIFactura.lblImagen.setIcon(lblAuto.getIcon());
 
 
 
-if(rbtMercedes.isSelected()){
-    GUIFactura.lblimaauto.setIcon(lblMercedes.getIcon());
-    GUIFactura.txtmarcaf.setText((String) cbmMercedes.getSelectedItem());
-    String aux = (String) cbmMercedes.getSelectedItem();
-                if(aux.equals("Mercedes Benzs Clase B B 180D")){
-                    GUIFactura.txtPrecio.setText(String.valueOf(auto[0].getPrecio()));
-                    GUIFactura.txtPrecioFinal.setText(String.valueOf(auto[0].calcularPrecioFinal()));
-                    
-                }
-                if(aux.equals("Mercedes Benzs GLA")){
-                    GUIFactura.txtPrecio.setText(String.valueOf(auto[1].getPrecio()));
-                    GUIFactura.txtPrecioFinal.setText(String.valueOf(auto[1].calcularPrecioFinal()));
-                }
-}
-if(rbtBMW.isSelected()){
-    GUIFactura.lblimaauto.setIcon(jLabel4.getIcon());
-    GUIFactura.txtmarcaf.setText((String) cbmBMW.getSelectedItem());
-    String aux = (String) cbmBMW.getSelectedItem();
-        if(aux.equals("BMW Serie 7")){
-            GUIFactura.txtPrecio.setText(String.valueOf(auto[2].getPrecio()));
-            GUIFactura.txtPrecioFinal.setText(String.valueOf(auto[2].calcularPrecioFinal()));
+        if(rbtMercedes.isSelected()){
+            GUIFactura.lblimaauto.setIcon(lblMercedes.getIcon());
+            GUIFactura.txtmarcaf.setText((String) cbmMercedes.getSelectedItem());
+            String aux = (String) cbmMercedes.getSelectedItem();
+                        if(aux.equals("Mercedes Benzs Clase B B 180D")){
+                            GUIFactura.txtPrecio.setText(String.valueOf(auto[0].getPrecio()));
+                            GUIFactura.txtPrecioFinal.setText(String.valueOf(auto[0].calcularPrecioFinal()));
+
+                        }
+                        if(aux.equals("Mercedes Benzs GLA")){
+                            GUIFactura.txtPrecio.setText(String.valueOf(auto[1].getPrecio()));
+                            GUIFactura.txtPrecioFinal.setText(String.valueOf(auto[1].calcularPrecioFinal()));
+                        }
         }
-        if(aux.equals("BMW GRT M3")){
-            GUIFactura.txtPrecio.setText(String.valueOf(auto[3].getPrecio())); 
-            GUIFactura.txtPrecioFinal.setText(String.valueOf(auto[3].calcularPrecioFinal()));
-        }
-        
-    }
-if(rbtHyundai.isSelected()){
-    GUIFactura.lblimaauto.setIcon(jLabel5.getIcon());
-    GUIFactura.txtmarcaf.setText((String) cmbHyundai.getSelectedItem());
-    String aux = (String) cmbHyundai.getSelectedItem();
-                if(aux.equals("Accent")){
-                    GUIFactura.txtPrecio.setText(String.valueOf(auto[4].getPrecio()));
-                    GUIFactura.txtPrecioFinal.setText(String.valueOf(auto[4].calcularPrecioFinal()));
+        if(rbtBMW.isSelected()){
+            GUIFactura.lblimaauto.setIcon(jLabel4.getIcon());
+            GUIFactura.txtmarcaf.setText((String) cbmBMW.getSelectedItem());
+            String aux = (String) cbmBMW.getSelectedItem();
+                if(aux.equals("BMW Serie 7")){
+                    GUIFactura.txtPrecio.setText(String.valueOf(auto[2].getPrecio()));
+                    GUIFactura.txtPrecioFinal.setText(String.valueOf(auto[2].calcularPrecioFinal()));
                 }
-                if(aux.equals("Verna")){
-                     GUIFactura.txtPrecio.setText(String.valueOf(auto[5].getPrecio()));
-                     GUIFactura.txtPrecioFinal.setText(String.valueOf(auto[5].calcularPrecioFinal()));
+                if(aux.equals("BMW GRT M3")){
+                    GUIFactura.txtPrecio.setText(String.valueOf(auto[3].getPrecio())); 
+                    GUIFactura.txtPrecioFinal.setText(String.valueOf(auto[3].calcularPrecioFinal()));
                 }
 
-}
-GUIFactura.txtColor.setText((String) cmbColor.getSelectedItem());
+            }
+        if(rbtHyundai.isSelected()){
+            GUIFactura.lblimaauto.setIcon(jLabel5.getIcon());
+            GUIFactura.txtmarcaf.setText((String) cmbHyundai.getSelectedItem());
+            String aux = (String) cmbHyundai.getSelectedItem();
+                        if(aux.equals("Accent")){
+                            GUIFactura.txtPrecio.setText(String.valueOf(auto[4].getPrecio()));
+                            GUIFactura.txtPrecioFinal.setText(String.valueOf(auto[4].calcularPrecioFinal()));
+                        }
+                        if(aux.equals("Verna")){
+                             GUIFactura.txtPrecio.setText(String.valueOf(auto[5].getPrecio()));
+                             GUIFactura.txtPrecioFinal.setText(String.valueOf(auto[5].calcularPrecioFinal()));
+                        }
+
+        }
+        GUIFactura.txtColor.setText((String) cmbColor.getSelectedItem());
 
 
 
@@ -720,44 +720,41 @@ GUIFactura.txtColor.setText((String) cmbColor.getSelectedItem());
     }//GEN-LAST:event_btnComprarActionPerformed
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
-        // TODO add your handling code here:
+
+        String nombre1;
+        String apellido1;
+        String cedula;
+        int edad;
+        Fecha fecha;
+        String aux;
+        ClaseEmpleado empleado = new ClaseEmpleado("00000","Jorge","Proaño","1700235645");
+    
+    
+        try{
         
+            aux = txtFecha.getText();
+            nombre1= txtNombre1.getText();
+            apellido1= txtApellido1.getText();
+            cedula = txtCedula.getText();
+            edad = Integer.parseInt(txtEdad.getText());
     
-    String nombre1;
-    String apellido1;
-    String cedula;
-    int edad;
-    Fecha fecha;
-    String aux;
-    ClaseEmpleado empleado = new ClaseEmpleado("00000","Jorge","Proaño","1700235645");
-    
-    
-    try{
-        
-    aux = txtFecha.getText();
-    nombre1= txtNombre1.getText();
-    apellido1= txtApellido1.getText();
-    cedula = txtCedula.getText();
-    edad = Integer.parseInt(txtEdad.getText());
-    
-    if(txtNombre.getText().equals(empleado.getNombre())){
-        if(txtApellido.getText().equals(empleado.getApellido())){
-            if(txtCodigo.getText().equals(empleado.getCodigo())){
-                //if ()
-                ClaseCliente cliente = new ClaseCliente(edad, nombre1, apellido1,cedula);
-                crearAutomivil();    
+        if(txtNombre.getText().equals(empleado.getNombre())){
+            if(txtApellido.getText().equals(empleado.getApellido())){
+                if(txtCodigo.getText().equals(empleado.getCodigo())){
+                    //if ()
+                    ClaseCliente cliente = new ClaseCliente(edad, nombre1, apellido1,cedula);
+                    crearAutomivil();    
                 
+                }
             }
-        }
-    }    
+        }    
     
     }
     catch(NumberFormatException nfe){
-        
-            JOptionPane.showMessageDialog(rootPane, "Por favor debe llenar todos las casillas");  
+        JOptionPane.showMessageDialog(rootPane, "Por favor debe llenar todos las casillas");  
         }
     catch(Exception e){
-           JOptionPane.showConfirmDialog(rootPane, "ERROR");
+        JOptionPane.showConfirmDialog(rootPane, "ERROR");
         }
         
     }//GEN-LAST:event_btnGuardarActionPerformed
