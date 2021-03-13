@@ -649,10 +649,10 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
         GUIFactura obj1 =  new GUIFactura();
         obj1.setVisible(true);
         this.dispose();
-        GUIFactura.txtNombeVendedor.setText(txtNombre.getText());
+        GUIFactura.txtNombreVendedor.setText(txtNombre.getText());
         GUIFactura.txtApelliidoVendedor.setText(txtApellido.getText());
         GUIFactura.txtCodigoVendedor.setText(txtCodigo.getText());
-        GUIFactura.txtNombComprador.setText(txtNombre1.getText());
+        GUIFactura.txtNombreComprador.setText(txtNombre1.getText());
         GUIFactura.txtApellidoComprador.setText(txtApellido1.getText());
         GUIFactura.txtCIComprador.setText(txtCedula.getText());
         GUIFactura.txtEdadComprador.setText(txtEdad.getText());

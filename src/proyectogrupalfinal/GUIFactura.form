@@ -23,17 +23,17 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
-              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="95" max="32767" attributes="0"/>
-          </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="218" max="-2" attributes="0"/>
               <Component id="btnCancelar" min="-2" pref="91" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="220" max="32767" attributes="0"/>
               <Component id="btnAceptar" min="-2" pref="96" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="230" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -92,7 +92,7 @@
                           </Group>
                       </Group>
                   </Group>
-                  <EmptySpace pref="110" max="32767" attributes="0"/>
+                  <EmptySpace pref="23" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -260,7 +260,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="lblNombreVendedor" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="txtNombeVendedor" pref="153" max="32767" attributes="0"/>
+                              <Component id="txtNombreVendedor" pref="153" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -284,7 +284,7 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="txtApellidoComprador" min="-2" pref="145" max="-2" attributes="0"/>
-                                  <Component id="txtNombComprador" alignment="0" min="-2" pref="145" max="-2" attributes="0"/>
+                                  <Component id="txtNombreComprador" alignment="0" min="-2" pref="145" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -299,7 +299,7 @@
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace min="0" pref="49" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -309,9 +309,9 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblNombreVendedor" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtNombeVendedor" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtNombreVendedor" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lblNombreComprador" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtNombComprador" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtNombreComprador" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -353,7 +353,7 @@
                 <Property name="text" type="java.lang.String" value="Codigo del Vendedor:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtNombeVendedor">
+            <Component class="javax.swing.JTextField" name="txtNombreVendedor">
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
@@ -373,7 +373,7 @@
                 <Property name="text" type="java.lang.String" value="Nombre del Comprador:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtNombComprador">
+            <Component class="javax.swing.JTextField" name="txtNombreComprador">
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
