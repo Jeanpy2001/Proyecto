@@ -54,7 +54,7 @@ public  class  ClasePersona  {
         return "ClasePersona{" + "nombre=" + nombre + ", apellido=" + apellido + ", NumeroIdentidad=" + cedula +  '}';
     }
     
-    public boolean esValidaLaID(){
+    public boolean esValida(){
         int verificacion=0;
         int[] num = new int[10];
         String cedula;
