@@ -410,6 +410,12 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
 
         jLabel11.setText("Fecha:");
 
+        txtFecha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtFechaActionPerformed(evt);
+            }
+        });
+
         lblDateExample.setText("DD/MM/AAAA");
         lblDateExample.setToolTipText("");
         lblDateExample.setEnabled(false);
@@ -658,7 +664,7 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
         GUIFactura.txtEdadComprador.setText(txtEdad.getText());
         GUIFactura.txtFecha1.setText(txtFecha.getText());
 
-        GUIFactura.lblImagen.setIcon(lblAuto.getIcon());
+        GUIFactura.lblImagen1.setIcon(lblAuto.getIcon());
 
 
 
@@ -789,6 +795,10 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
         cmbHyundai.setEnabled(true);
         cbmBMW.setEnabled(false);
     }//GEN-LAST:event_rbtHyundaiMouseClicked
+
+    private void txtFechaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtFechaActionPerformed
 
     /**
      * @param args the command line arguments
