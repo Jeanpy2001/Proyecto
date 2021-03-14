@@ -26,7 +26,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="218" max="-2" attributes="0"/>
               <Component id="btnCancelar" min="-2" pref="91" max="-2" attributes="0"/>
-              <EmptySpace pref="220" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
               <Component id="btnAceptar" min="-2" pref="96" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="230" max="-2" attributes="0"/>
           </Group>
@@ -437,7 +437,7 @@
                           </Group>
                           <Component id="lblColor" alignment="0" max="32767" attributes="0"/>
                           <Component id="lblPrecio" alignment="0" max="32767" attributes="0"/>
-                          <Component id="lblPrecioFInal" pref="83" max="32767" attributes="0"/>
+                          <Component id="lblPrecioFInal" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
