@@ -744,7 +744,8 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
                     if(txtCodigo.getText().equals(empleado.getCodigo())){
                         if(id.esValida()){
                             ClaseCliente cliente = new ClaseCliente(edad, nombre1, apellido1,cedula);
-                            crearAutomivil();    
+                            crearAutomivil();   
+                            JOptionPane.showMessageDialog(rootPane, "Datos guardados exitosamente");  
                         }
                         else{
                             JOptionPane.showMessageDialog(rootPane, "Por favor ingrese una cédula válida", "ERROR",2);
