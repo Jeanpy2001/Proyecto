@@ -612,7 +612,6 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         String aux,aux1,aux2;
-        crearAutomivil();
 
         try{ 
             if(rbtBMW.isSelected()){
