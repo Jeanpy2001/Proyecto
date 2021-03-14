@@ -664,7 +664,7 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
         GUIFactura.txtEdadComprador.setText(txtEdad.getText());
         GUIFactura.txtFecha1.setText(txtFecha.getText());
 
-        GUIFactura.lblImagen.setIcon(lblAuto.getIcon());
+        GUIFactura.lblImagen1.setIcon(lblAuto.getIcon());
 
 
 
