@@ -711,8 +711,10 @@ public class GuiProyectoFinal extends javax.swing.JFrame {
         }
         GUIFactura.txtColor.setText((String) cmbColor.getSelectedItem());
 
-
-
+int contador=0;
+contador ++;
+String publicar=String.valueOf(contador);
+GUIFactura.txtNumFactura.setText(publicar);
        
     }//GEN-LAST:event_btnComprarActionPerformed
 
