@@ -44,7 +44,7 @@ public class GUIFactura extends javax.swing.JFrame {
         txtNombreVendedor.setEnabled(false);
         txtCIComprador.setEnabled(false);
    
-        
+        txtNumFactura.setEnabled(false);
     }
 
     /**
@@ -69,6 +69,7 @@ public class GUIFactura extends javax.swing.JFrame {
         txtNumFactura = new javax.swing.JTextField();
         lblTelefono = new javax.swing.JLabel();
         lblTelefono2 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         pnlDatosVendYComp = new javax.swing.JPanel();
         lblNombreVendedor = new javax.swing.JLabel();
         lblApellidoVendedor = new javax.swing.JLabel();
@@ -124,6 +125,8 @@ public class GUIFactura extends javax.swing.JFrame {
 
         lblTelefono2.setText("3680820");
 
+        jLabel2.setText("002---");
+
         javax.swing.GroupLayout pnlDatosLayout = new javax.swing.GroupLayout(pnlDatos);
         pnlDatos.setLayout(pnlDatosLayout);
         pnlDatosLayout.setHorizontalGroup(
@@ -144,7 +147,7 @@ public class GUIFactura extends javax.swing.JFrame {
                             .addComponent(lblCIudad2, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lblTelefono2, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(143, 143, 143)
-                .addGroup(pnlDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pnlDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(pnlDatosLayout.createSequentialGroup()
                         .addComponent(lblFecha, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -152,8 +155,10 @@ public class GUIFactura extends javax.swing.JFrame {
                     .addGroup(pnlDatosLayout.createSequentialGroup()
                         .addComponent(lblNumFactura)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(txtNumFactura, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(101, Short.MAX_VALUE))
+                .addContainerGap(125, Short.MAX_VALUE))
         );
         pnlDatosLayout.setVerticalGroup(
             pnlDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -169,6 +174,7 @@ public class GUIFactura extends javax.swing.JFrame {
                     .addComponent(lblCiudad)
                     .addComponent(lblCIudad2)
                     .addComponent(lblNumFactura)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtNumFactura, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(pnlDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -395,7 +401,7 @@ public class GUIFactura extends javax.swing.JFrame {
                         .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(49, 49, 49)
                         .addComponent(btnAceptar, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -475,6 +481,7 @@ JOptionPane.showMessageDialog(rootPane,"Gracias por su Compra");
     private javax.swing.JButton btnAceptar;
     private javax.swing.JButton btnCancelar;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblApellidoComprador;
     private javax.swing.JLabel lblApellidoVendedor;
@@ -511,7 +518,7 @@ JOptionPane.showMessageDialog(rootPane,"Gracias por su Compra");
     public static javax.swing.JTextField txtMarcaVehiculo;
     public static javax.swing.JTextField txtNombreComprador;
     public static javax.swing.JTextField txtNombreVendedor;
-    private javax.swing.JTextField txtNumFactura;
+    public static javax.swing.JTextField txtNumFactura;
     public static javax.swing.JTextField txtPrecio;
     public static javax.swing.JTextField txtPrecioFinal;
     // End of variables declaration//GEN-END:variables
